@@ -90,12 +90,21 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
+<<<<<<< HEAD
             VALUE "FileDescription", "utspemrogaman" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
             VALUE "InternalName", "utspemrogaman" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2024 com.example. All rights reserved." "\0"
             VALUE "OriginalFilename", "utspemrogaman.exe" "\0"
             VALUE "ProductName", "utspemrogaman" "\0"
+=======
+            VALUE "FileDescription", "coffee_app" "\0"
+            VALUE "FileVersion", VERSION_AS_STRING "\0"
+            VALUE "InternalName", "coffee_app" "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2024 com.example. All rights reserved." "\0"
+            VALUE "OriginalFilename", "coffee_app.exe" "\0"
+            VALUE "ProductName", "coffee_app" "\0"
+>>>>>>> 809a7a1 (consume api)
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'package:flutter/widgets.dart';
 
 class SingleItemScreen extends StatelessWidget {
@@ -8,6 +9,26 @@ class SingleItemScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
+=======
+
+class SingleItemScreen extends StatelessWidget {
+  final String name;
+  final String description;
+  final double price;
+  final String imageUrl;
+  final String volume;
+
+  SingleItemScreen({
+    required this.name,
+    required this.description,
+    required this.price,
+    required this.imageUrl,
+    required this.volume,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+>>>>>>> 809a7a1 (consume api)
     return Scaffold(
       body: SingleChildScrollView(
         child: SafeArea(
@@ -30,9 +51,18 @@ class SingleItemScreen extends StatelessWidget {
                 ),
                 SizedBox(height: 50),
                 Center(
+<<<<<<< HEAD
                   child: Image.asset(
                     "images/$img.png",
                     width: MediaQuery.of(context).size.width / 1.2,
+=======
+                  child: Image.network(
+                    imageUrl,
+                    width: MediaQuery.of(context).size.width / 1.2,
+                    errorBuilder: (context, error, stackTrace) {
+                      return Icon(Icons.error_outline, color: Colors.white);
+                    },
+>>>>>>> 809a7a1 (consume api)
                   ),
                 ),
                 SizedBox(height: 50),
@@ -42,7 +72,11 @@ class SingleItemScreen extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
+<<<<<<< HEAD
                         "Best Coffe",
+=======
+                        "Best Coffee",
+>>>>>>> 809a7a1 (consume api)
                         style: TextStyle(
                           color: Colors.white.withOpacity(0.4),
                           letterSpacing: 3,
@@ -50,7 +84,11 @@ class SingleItemScreen extends StatelessWidget {
                       ),
                       SizedBox(height: 20),
                       Text(
+<<<<<<< HEAD
                         img,
+=======
+                        name,
+>>>>>>> 809a7a1 (consume api)
                         style: TextStyle(
                           fontSize: 30,
                           letterSpacing: 1,
@@ -99,7 +137,11 @@ class SingleItemScreen extends StatelessWidget {
                               ),
                             ),
                             Text(
+<<<<<<< HEAD
                               "\$ 30.20",
+=======
+                              "\$ ${price.toStringAsFixed(2)}",
+>>>>>>> 809a7a1 (consume api)
                               style: TextStyle(
                                 fontSize: 18,
                                 fontWeight: FontWeight.w500,
@@ -111,7 +153,11 @@ class SingleItemScreen extends StatelessWidget {
                       ),
                       SizedBox(height: 20),
                       Text(
+<<<<<<< HEAD
                         "Coffe is major source of antipxidants in the diet. it has many health benefits",
+=======
+                        description,
+>>>>>>> 809a7a1 (consume api)
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.w500,
@@ -122,7 +168,11 @@ class SingleItemScreen extends StatelessWidget {
                       Row(
                         children: [
                           Text(
+<<<<<<< HEAD
                             "volume",
+=======
+                            "Volume",
+>>>>>>> 809a7a1 (consume api)
                             style: TextStyle(
                                 fontSize: 18,
                                 fontWeight: FontWeight.w500,
@@ -130,9 +180,15 @@ class SingleItemScreen extends StatelessWidget {
                           ),
                           SizedBox(width: 10),
                           Text(
+<<<<<<< HEAD
                             "60ml",
                             style: TextStyle(
                                 fontSize: 16,
+=======
+                            volume,
+                            style: TextStyle(
+                                fontSize: 18,
+>>>>>>> 809a7a1 (consume api)
                                 fontWeight: FontWeight.w500,
                                 color: Colors.white),
                           ),

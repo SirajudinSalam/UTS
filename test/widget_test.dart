@@ -8,12 +8,20 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
+<<<<<<< HEAD
 // import 'package:utspemrogaman/main.dart';
+=======
+import 'package:coffee_app/main.dart';
+>>>>>>> 809a7a1 (consume api)
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
+<<<<<<< HEAD
     // await tester.pumpWidget(const MyApp());
+=======
+    await tester.pumpWidget(const MyApp());
+>>>>>>> 809a7a1 (consume api)
 
     // Verify that our counter starts at 0.
     expect(find.text('0'), findsOneWidget);

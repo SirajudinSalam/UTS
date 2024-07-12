@@ -1,8 +1,17 @@
+<<<<<<< HEAD
 name: utspemrogaman
 description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: "none" # Remove this line if you wish to publish to pub.dev
+=======
+name: coffee_app
+description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+>>>>>>> 809a7a1 (consume api)
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -19,7 +28,11 @@ publish_to: "none" # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
+<<<<<<< HEAD
   sdk: ">=3.4.0 <4.0.0"
+=======
+  sdk: '>=2.18.4 <3.0.0'
+>>>>>>> 809a7a1 (consume api)
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -30,11 +43,20 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+<<<<<<< HEAD
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.6
   google_fonts: ^6.2.1
+=======
+  google_fonts: ^3.0.0
+  http: ^0.13.3
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+>>>>>>> 809a7a1 (consume api)
 
 dev_dependencies:
   flutter_test:
@@ -43,10 +65,16 @@ dev_dependencies:
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
   # activated in the `analysis_options.yaml` file located at the root of your
+<<<<<<< HEAD
   # package. See that file2
   # for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^3.0.0
+=======
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^2.0.0
+>>>>>>> 809a7a1 (consume api)
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -60,7 +88,16 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
+<<<<<<< HEAD
     - images/
+=======
+    - images/bg.png
+    - images/Black Coffee.png
+    - images/Cold Coffee.png
+    - images/Espresso.png
+    - images/Latte.png
+
+>>>>>>> 809a7a1 (consume api)
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

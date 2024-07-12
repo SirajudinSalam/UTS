@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'package:utspemrogaman/widgets/home_bottom_bar.dart';
 import 'package:utspemrogaman/widgets/item_widget.dart';
+=======
+import 'package:coffee_app/widgets/home_bottom_bar.dart';
+import 'package:coffee_app/widgets/item_widget.dart';
+>>>>>>> 809a7a1 (consume api)
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -10,6 +15,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen>
     with SingleTickerProviderStateMixin {
   late TabController _tabController;
+<<<<<<< HEAD
   @override
   void initState() {
     _tabController = TabController(length: 4, vsync: this, initialIndex: 0);
@@ -18,6 +24,17 @@ class _HomeScreenState extends State<HomeScreen>
   }
 
   _handleTabSlection() {
+=======
+
+  @override
+  void initState() {
+    _tabController = TabController(length: 4, vsync: this, initialIndex: 0);
+    _tabController.addListener(_handleTabSelection);
+    super.initState();
+  }
+
+  _handleTabSelection() {
+>>>>>>> 809a7a1 (consume api)
     if (_tabController.indexIsChanging) {
       setState(() {});
     }
@@ -35,7 +52,11 @@ class _HomeScreenState extends State<HomeScreen>
       body: SafeArea(
         child: Padding(
           padding: EdgeInsets.only(top: 15),
+<<<<<<< HEAD
           child: ListView(
+=======
+          child: Column(
+>>>>>>> 809a7a1 (consume api)
             children: [
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 15),
@@ -57,7 +78,11 @@ class _HomeScreenState extends State<HomeScreen>
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 15),
                 child: Text(
+<<<<<<< HEAD
                   "It's a Great Day for Coffe",
+=======
+                  "It's a Great Day for Coffee",
+>>>>>>> 809a7a1 (consume api)
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 30,
@@ -77,7 +102,11 @@ class _HomeScreenState extends State<HomeScreen>
                 child: TextFormField(
                   decoration: InputDecoration(
                     border: InputBorder.none,
+<<<<<<< HEAD
                     hintText: "Find You Coffe",
+=======
+                    hintText: "Find Your Coffee",
+>>>>>>> 809a7a1 (consume api)
                     hintStyle: TextStyle(
                       color: Colors.white.withOpacity(0.5),
                     ),
@@ -105,6 +134,7 @@ class _HomeScreenState extends State<HomeScreen>
                     TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
                 labelPadding: EdgeInsets.symmetric(horizontal: 20),
                 tabs: [
+<<<<<<< HEAD
                   Tab(
                     text: "Hot Coffe",
                   ),
@@ -130,6 +160,26 @@ class _HomeScreenState extends State<HomeScreen>
                   ItemWidget(),
                 ][_tabController.index],
               )
+=======
+                  Tab(text: "Hot Coffee"),
+                  Tab(text: "Cold Coffee"),
+                  Tab(text: "Cappuccino"),
+                  Tab(text: "Americano"),
+                ],
+              ),
+              SizedBox(height: 10),
+              Expanded(
+                child: TabBarView(
+                  controller: _tabController,
+                  children: [
+                    ItemWidget(categoryId: 1), // Hot Coffee
+                    ItemWidget(categoryId: 2), // Cold Coffee
+                    ItemWidget(categoryId: 3), // Cappuccino
+                    ItemWidget(categoryId: 4), // Americano
+                  ],
+                ),
+              ),
+>>>>>>> 809a7a1 (consume api)
             ],
           ),
         ),

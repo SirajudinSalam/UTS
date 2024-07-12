@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
     "name": "utspemrogaman",
     "short_name": "utspemrogaman",
+=======
+    "name": "coffee_app",
+    "short_name": "coffee_app",
+>>>>>>> 809a7a1 (consume api)
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

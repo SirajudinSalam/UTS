@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+<<<<<<< HEAD
 import 'package:utspemrogaman/screens/home_screen.dart';
+=======
+import 'package:coffee_app/screens/home_screen.dart';
+>>>>>>> 809a7a1 (consume api)
 
 class WelcomeScreen extends StatelessWidget {
   @override
